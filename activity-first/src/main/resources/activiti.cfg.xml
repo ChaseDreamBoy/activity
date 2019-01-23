@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 流程引擎配置的bean -->
+	<bean id="processEngineConfiguration"
+		class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/activity" />
+		<property name="jdbcDriver" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUsername" value="root" />
+		<property name="jdbcPassword" value="accp" />
+		<!--
+		 	false：false 为默认值，设置为该值后，Activiti 在启动时，会对比数据库表中保存
+		 		的版本，如果没有表或者版本不匹配时，将在启动时抛出异常。
+			true：设置为该值后，Activiti 会对数据库中所有的表进行更新，如果表不存在，则
+				Activiti 会自动创建。
+			create-drop：Activiti 启动时，会执行数据库表的创建操作，在Activiti 流程引擎关闭时，
+				执行数据库表的删除操作。
+			drop-create：隐藏值，先删除，在创建
+		 -->
+		<property name="databaseSchemaUpdate" value="true" />
+		<!--
+		 	none:
+		 	activity:
+		 	audit:
+		 	full:
+		 -->
+		<property name="history" value="full"/>
+		<!--
+		 	配置发送邮件
+		 -->
+	</bean>
+
+</beans>
