@@ -28,6 +28,7 @@
 		 -->
 		<property name="history" value="full"/>
 		<!--
+
 		 	部署流程时，activity不生成流程图
 
 		<property name="createDiagramOnDeploy" value="false"/>

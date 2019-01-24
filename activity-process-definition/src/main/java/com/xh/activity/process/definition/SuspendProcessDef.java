@@ -33,6 +33,7 @@ public class SuspendProcessDef {
         repositoryService.suspendProcessDefinitionByKey(def.getKey());
         // 调用activateProcessDefinitionByKey激活流程定义
         repositoryService.activateProcessDefinitionByKey(def.getKey());
+
     }
 
 }

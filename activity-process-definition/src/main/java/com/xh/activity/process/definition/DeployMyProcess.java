@@ -23,6 +23,7 @@ public class DeployMyProcess {
         // 在数据库表 ACT_RE_DEPLOY 和 ACT_GE_BYTEARRAY 中会有数据
         deploymentBuilder.deploy();
         engine.close();
+
         System.exit(0);
     }
 

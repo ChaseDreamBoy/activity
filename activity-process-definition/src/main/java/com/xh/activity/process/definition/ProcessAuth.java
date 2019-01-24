@@ -15,6 +15,7 @@ import java.util.UUID;
 public class ProcessAuth {
 
     public static void main(String[] args) {
+
         // 启动流程引擎  自定义activiti.cfg.xml文件路径  和引擎bean的名称
         ProcessEngine engine =
                 ProcessEngineConfiguration
