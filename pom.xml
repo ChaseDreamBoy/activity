@@ -14,6 +14,7 @@
         <module>activity-query-demo</module>
         <module>activity-deploy</module>
         <module>activity-process-definition</module>
+        <module>activity-task</module>
     </modules>
 
 </project>
