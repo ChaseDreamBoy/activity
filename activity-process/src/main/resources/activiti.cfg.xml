@@ -19,7 +19,7 @@
 				执行数据库表的删除操作。
 			drop-create：隐藏值，先删除，在创建
 		 -->
-		<property name="databaseSchemaUpdate" value="drop-create" />
+		<property name="databaseSchemaUpdate" value="true" />
 		<!--
 		 	none:
 		 	activity:
@@ -30,6 +30,8 @@
 		<!--
 		 	配置发送邮件
 		 -->
+		<!-- 启动异步执行器 -->
+		<property name="asyncExecutorActivate" value="true" />
 	</bean>
 
 </beans>

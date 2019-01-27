@@ -15,6 +15,8 @@
         <module>activity-deploy</module>
         <module>activity-process-definition</module>
         <module>activity-task</module>
+        <module>activity-common</module>
+        <module>activity-process</module>
     </modules>
 
 </project>
